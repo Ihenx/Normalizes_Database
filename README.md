@@ -30,7 +30,7 @@ FROM
     sales_records;
 ```
 
-2. Link sales_records to customers with a Foreign Key
+* Link sales_records to customers with a Foreign Key
   Establishes a relationship between sales_records and customers.
 ```
 sql
@@ -41,7 +41,7 @@ ON DELETE CASCADE
 ON UPDATE CASCADE;
 ```
 Establishes a relationship between sales_records and customers.
-4. Create and Populate the products Table
+* Create and Populate the products Table
 sql
 CREATE TABLE products (
     product_id INT PRIMARY KEY,
@@ -70,7 +70,8 @@ Similar steps are repeated for:
 `countries (id, country)`
 `payment_methods (id, payment_method)`
 Each table is populated with unique data from sales_records and linked via foreign keys.
-6. Clean Up sales_records
+* Clean Up sales_records<br/>
+
 Removes redundant columns from sales_records after normalization.
 ```
 sql
@@ -84,4 +85,4 @@ ALTER TABLE sales_records
     DROP COLUMN payment_method,
     DROP COLUMN product_price;
 ```
-Removes redundant columns from sales_records after normalization.
+
