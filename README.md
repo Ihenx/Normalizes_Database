@@ -66,11 +66,12 @@ ON UPDATE CASCADE;
 ```
  Create and Populate Additional Tables
 Similar steps are repeated for:
-categories (category_id, category_name)
-countries (id, country)
-payment_methods (id, payment_method)
+`categories (category_id, category_name)`
+`countries (id, country)`
+`payment_methods (id, payment_method)`
 Each table is populated with unique data from sales_records and linked via foreign keys.
 6. Clean Up sales_records
+Removes redundant columns from sales_records after normalization.
 ```
 sql
 ALTER TABLE sales_records
