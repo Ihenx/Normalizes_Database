@@ -1,6 +1,6 @@
 # Normalisation of Database
 
-Normalization of a Database is a process in database design used to organize data efficiently by eliminating redundancy (duplicate data) and ensuring data integrity. It involves structuring a database into multiple related tables based on specific rules, typically defined by a series of "normal forms." The goal is to minimize anomalies during data operations like insertion, updating, and deletion, while making the database more logical and easier to maintain.
+Normalization of a Database is a process in database design used to organize data efficiently by eliminating redundancy (duplicate data) and ensuring data integrity. It involves structuring a database into multiple related tables  The goal is reduce redundancy and increase data integrity by minimizing anomalies during data operations like insertion, updating, and deletion, while making the database more logical and easier to maintain.
 ### Key Concepts of Normalization:
 * Redundancy Reduction: Prevents unnecessary duplication of data. For example, instead of storing a customer's name and email repeatedly in every sales record, they are stored once in a separate customers table.
 * Data Integrity: Ensures accuracy and consistency by reducing the risk of anomalies (e.g., updating a customer's name in one place but not another).
